@@ -1,7 +1,5 @@
 import React from 'react';
 
-type Props = {};
-
-const BaseTemplate: React.FC<Props> = (props: Props) => {
+export const BaseTemplate: React.FC = () => {
   return <div>BaseTemplate</div>;
 };
