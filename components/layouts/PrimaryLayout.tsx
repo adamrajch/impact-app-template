@@ -1,14 +1,8 @@
 import Head from 'next/head';
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
-  justify?: 'items-center' | 'items-start';
-}
+export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {}
 
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({
-  children,
-  justify = 'items-center',
-  ...divProps
-}) => {
+const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
   return (
     <>
       <Head>
